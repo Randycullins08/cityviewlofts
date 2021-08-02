@@ -20,23 +20,25 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>City Center Apartments</title>
+    <title>Cityview Lofts</title>
   </head>
 
   <body>
-    
-    <header class="jumbotron jumbotron-fluid" >
+    <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row">
-          
-        </div>
+        <div class="row"></div>
       </div>
     </header>
 
-    <nav class="navbar navbar-light navbar-expand-md bg-white sticky-top">
+    <nav
+      class="navbar navbar-light navbar-expand-md bg-white border-bottom sticky-top"
+    >
       <a class="navbar-brand" href="#"></a>
       <button
         class="navbar-toggler"
@@ -55,8 +57,8 @@
           </li>
           <li class="nav-item m-auto">
             <a class="nav-link" href="photos.html"
-              ><i class="fa fa-lg"></i>Photos & Floor Plan </a
-            >
+              ><i class="fa fa-lg"></i>Photos & Floor Plan
+            </a>
           </li>
           <li class="nav-item m-auto active">
             <a class="nav-link" href="tour.html"
@@ -76,6 +78,26 @@
         </ul>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <h2>Virtual Tour</h2>
+        <button
+          type="button"
+          class="btn btn-light ml-auto active"
+          data-toggle="modal"
+          data-target="#bookATour"
+        >
+          Book A Tour
+        </button>
+      </div>
+      <hr/>
+
+      <div class="embed-responsive embed-responsive-21by9 mb-3">
+        <video class="embed-responsive-item" src="/img/video/IMG_4682.mov" controls></video>
+      </div>
+      
+    </div>
 
     <div id="bookATour" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="document">
@@ -166,7 +188,9 @@
 
               <div class="form-group row">
                 <div class="offset-md-2 col-md-10">
-                  <button type="submit" class="btn btn-light active">Submit</button>
+                  <button type="submit" class="btn btn-light active">
+                    Submit
+                  </button>
                 </div>
               </div>
             </form>
@@ -176,23 +200,38 @@
     </div>
 
     <footer class="site-footer">
-        <div class="container">
-          <div class="row align-items-center">
-            <h1 class="m-auto pb-3">Cityview Lofts</h1>
-          </div>
-          <div class="row align-items-center">
-            <button type="button" class="btn btn-light m-auto active" data-toggle="modal" data-target="#bookATour">
-              Book A Tour
-            </button>
-          </div>
-          <div class="row align-items-center">
-            <h5 class="m-auto pt-3">123 Cityview Lofts Lane. Ogden, UT 84401</h5>
-          </div>
-          <div class="row align-items-center">
-            <a role="button" class="m-auto pt-3" href="tel:+15551231234"><i class="fa fa-phone"></i>1-555-123-1234</a>
-          </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <h1 class="m-auto pb-3">Cityview Lofts</h1>
         </div>
-      </footer>
+        <div class="row align-items-center">
+          <button
+            type="button"
+            class="btn btn-light m-auto active"
+            data-toggle="modal"
+            data-target="#bookATour"
+          >
+            Book A Tour
+          </button>
+        </div>
+        <div class="row align-items-center">
+          <h5 class="m-auto pt-3">123 Cityview Lofts Lane. Ogden, UT 84401</h5>
+        </div>
+        <div class="row align-items-center">
+          <a role="button" class="m-auto pt-3" href="tel:+15551231234"
+            ><i class="fa fa-phone"></i>1-555-123-1234</a
+          >
+        </div>
+        <div class="row align-items-center">
+          <a
+            role="button"
+            class="m-auto"
+            href="mailto:management@cityviewlofts.com"
+            ><i class="fa fa-envelope"></i> management@cityviewlofts.com</a
+          >
+        </div>
+      </div>
+    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
